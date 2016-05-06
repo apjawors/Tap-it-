@@ -1,0 +1,13 @@
+<body ng-app="myApp" ng-controller="scoreCtrl">
+  <div class="intro">
+    <h1 class="tapit bounceInDown animated">TAP-IT!</h1>
+    <h1 class="zoomIn animated" style="color:#fff; top: 200px">Tap to play!</h1>
+  </div>
+  <h1 class="words">Start tapping!</h1>
+  <h2 class="score">{{count}}</h2>
+  <div class="timer-container" ng-controller="timerCtrl">
+    <h3 class="timer">{{timer}}</h3>
+  </div>
+  <canvas id="canvas" ng-click="countFunction()">
+  </canvas>
+</body>
